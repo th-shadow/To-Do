@@ -58,6 +58,7 @@ class _NewTaskBodyState extends State<NewTaskBody> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: TextField(
+                  maxLength: 20,
                   controller: widget.taskNameController,
                   maxLines: 1,
                   decoration: InputDecoration(
@@ -115,6 +116,7 @@ class _NewTaskBodyState extends State<NewTaskBody> {
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: TextField(
                   controller: widget.descriptionController,
+                  maxLength: 50,
                   maxLines: 4,
                   decoration: InputDecoration(
                     hint: Text(

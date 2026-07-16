@@ -176,7 +176,11 @@ class _CardsState extends State<Cards> {
                           ),
                         ),
                         TextButton.icon(
-                          onPressed: () {},
+                          onPressed: () {
+                            tasksInstance.changeStatus(tasks[index].id);
+
+                            setState(() {});
+                          },
                           icon: Icon(Icons.check_box_outlined),
                           label: tasks[index].status
                               ? Text("Undo")

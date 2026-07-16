@@ -73,7 +73,7 @@ class Tasks {
   }
 
   void addTask(String taskName, String taskDescription, Priority priority) {
-    if (taskName.isEmpty) throw Error();
+    if (taskName.isEmpty) throw Exception();
     if (taskDescription.isEmpty) taskDescription = "";
 
     int id = tasksList.last.id + 1;
